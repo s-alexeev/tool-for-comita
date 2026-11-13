@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Карточка клиента: генератор и конвертер</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<!-- уровень 0: core -->
+<script src="src/core/ns.js"></script>
+<script src="src/core/csv.js"></script>
+<script src="src/core/xml.js"></script>
+<script src="src/core/xsd-model.js"></script>
+<script src="src/core/xsd-validate.js"></script>
+<script src="src/core/checksums.js"></script>
+<script src="src/core/random.js"></script>
+<script src="src/core/zip.js"></script>
+<script src="schemas/clientinfo.xsd.js"></script>
+<!-- уровень 1: model -->
+<script src="src/model/dict/oksm.js"></script>
+<script src="src/model/dict/regions.js"></script>
+<script src="src/model/dict/codes.js"></script>
+<script src="src/model/input/dsl.js"></script>
+<script src="src/model/input/common.sections.js"></script>
+<script src="src/model/input/prsn.js"></script>
+<script src="src/model/input/busn.js"></script>
+<script src="src/model/input/legl.js"></script>
+<script src="src/model/output/clientinfo.aliases.js"></script>
+<!-- уровень 2: mapping -->
+<script src="src/mapping/dsl.js"></script>
+<script src="src/mapping/transforms.js"></script>
+<script src="src/mapping/engine.js"></script>
+<script src="src/mapping/builder.js"></script>
+<script src="src/mapping/defaults.js"></script>
+<script src="src/mapping/shared.map.js"></script>
+<script src="src/mapping/prsn.map.js"></script>
+<script src="src/mapping/busn.map.js"></script>
+<script src="src/mapping/legl.map.js"></script>
+<!-- уровень 2: generator -->
+<script src="src/generator/data.js"></script>
+<script src="src/generator/entities.js"></script>
+<script src="src/generator/dsl.js"></script>
+<script src="src/generator/shared.gen.js"></script>
+<script src="src/generator/prsn.gen.js"></script>
+<script src="src/generator/busn.gen.js"></script>
+<script src="src/generator/legl.gen.js"></script>
+<script src="src/generator/dirty.js"></script>
+<!-- уровень 3: services -->
+<script src="src/services/schema.js"></script>
+<script src="src/services/load.js"></script>
+<script src="src/services/convert.js"></script>
+<script src="src/services/export.js"></script>
+<script src="src/services/generate.js"></script>
+<!-- уровень 4: ui -->
+<script src="src/ui/dom.js"></script>
+<script src="src/ui/structure.view.js"></script>
+<script src="src/ui/generator.view.js"></script>
+<script src="src/ui/converter.view.js"></script>
+<script src="src/ui/app.js"></script>
+</body>
+</html>
